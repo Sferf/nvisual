@@ -32,7 +32,7 @@ impl Task {
         task
     }
 
-    fn next_id() -> u64 {
+    pub fn next_id() -> u64 {
         NEXT_TASK_ID.fetch_add(1, Ordering::SeqCst)
     }
 
